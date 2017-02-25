@@ -18,6 +18,7 @@
 <script>
   import { requestLogin } from '../api/api';
   import NProgress from 'nprogress'
+  // 使用ES6语法中的import来引入
   // Import Crypto JS for Twitter OAuth request signing
   import hmac_sha1 from 'crypto-js/hmac-sha1'
   import encode_base64 from 'crypto-js/enc-base64'
@@ -82,7 +83,7 @@
                 console.log(sessionStorage.getItem('user'))
                 //let { active, code, message,nickname,token } = response.data;
                 //sessionStorage.setItem('user', JSON.stringify(user)); //从一个对象解析出字符串
-                this.$router.push({ path: '/table' });
+                this.$router.push({ path: '/echarts' });
             }, response => {
                 // error callback
                 this.logining = false;

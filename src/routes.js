@@ -5,6 +5,7 @@ import Main from './pages/Main.vue'
 import Table from './pages/nav1/Table.vue'
 import Form from './pages/nav1/Form.vue'
 import user from './pages/nav1/user.vue'
+import zhs from './pages/nav1/zhs.vue'
 import Page4 from './pages/nav2/Page4.vue'
 import Page5 from './pages/nav2/Page5.vue'
 import Page6 from './pages/nav3/Page6.vue'
@@ -63,6 +64,7 @@ let routes = [
             { path: '/table', component: Table, name: 'Table' },
             { path: '/form', component: Form, name: 'Form' },
             { path: '/user', component: user, name: '列表' },
+            { path: '/zhs', component: zhs, name: '综合数' },
         ]
     },
     {
